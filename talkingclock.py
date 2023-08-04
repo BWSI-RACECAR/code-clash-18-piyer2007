@@ -47,7 +47,7 @@ class Solution:
             res += hour
             min = input_time[3]
             sec = int(min)
-            if sec == 0:
+            if sec == 0 and int(input_time[4]) != 0:
                 res+="oh "
             elif sec == 1:
                 teen = (input_time[3]) + (input_time[4])
@@ -62,8 +62,7 @@ class Solution:
                 res += "fifty "
 
             if int(input_time[4]) == 0 or int(input_time[3]) == 1:
-                if(sec == 0):
-                    res += "clock "
+                res+=""
             else:
                 res+= dic[int(input_time[4])]
             if int(input_time[0] + input_time[1]) < 12:
