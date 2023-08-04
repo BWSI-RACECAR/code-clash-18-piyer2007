@@ -59,7 +59,7 @@ class Solution:
             elif sec == 5:
                 res += "fifty"
 
-            if int(input_time[4]) == 0 && int(input_time[3]) != 1:
+            if int(input_time[4]) == 0 and int(input_time[3]) != 1:
                 if(sec == 0):
                     res += "clock "
             else:
