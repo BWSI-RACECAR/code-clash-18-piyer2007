@@ -48,18 +48,18 @@ class Solution:
             min = input_time[3]
             sec = int(min)
             if sec == 0:
-                res+=" oh "
+                res+="oh "
             elif sec == 1:
                 teen = (input_time[3]) + (input_time[4])
                 res += dic[int(teen)]
             elif sec == 2:
-                res+= " twenty"
+                res+= "twenty"
             elif sec == 3:
-                res += " thirty"
+                res += "thirty"
             elif sec == 4:
-                res += " fourty"
+                res += "fourty"
             elif sec == 5:
-                res += " fifty"
+                res += "fifty"
 
             if int(input_time[4]) == 0 or int(input_time[3]) == 1:
                 if(sec == 0):
@@ -67,9 +67,9 @@ class Solution:
             else:
                 res+= dic[int(input_time[4])]
             if int(input_time[0]) < 2:
-                res += " am"
+                res += "am"
             else:
-                res +=  " pm"
+                res +=  "pm"
             print(input_time)
             print(res)
             return res
