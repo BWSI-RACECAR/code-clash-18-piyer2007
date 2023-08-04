@@ -53,13 +53,13 @@ class Solution:
                 teen = (input_time[3]) + (input_time[4])
                 res += dic[int(teen)]
             elif sec == 2:
-                res+= "twenty"
+                res+= "twenty "
             elif sec == 3:
-                res += "thirty"
+                res += "thirty "
             elif sec == 4:
-                res += "fourty"
+                res += "fourty "
             elif sec == 5:
-                res += "fifty"
+                res += "fifty "
 
             if int(input_time[4]) == 0 or int(input_time[3]) == 1:
                 if(sec == 0):
