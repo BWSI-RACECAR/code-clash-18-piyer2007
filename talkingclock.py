@@ -63,7 +63,7 @@ class Solution:
                     res += "clock "
             else:
                 res+= dic[int(input_time[4])]
-            if input_time[0] < 2:
+            if int(input_time[0]) < 2:
                 res += "am"
             else:
                 res += "pm"
