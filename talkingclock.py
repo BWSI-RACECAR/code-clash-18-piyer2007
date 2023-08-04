@@ -40,7 +40,7 @@ class Solution:
             if first == 0:
                 first = 12
 
-            dic = {1:"one", 2:"two", 3:"three", 4:"four", 5:"five", 6:"six", 7:"seven", 8:"eight", 9:"nine", 10:"ten", 11:"eleven", 12:"twelve"}
+            dic = {1:"one", 2:"two", 3:"three", 4:"four", 5:"five", 6:"six", 7:"seven", 8:"eight", 9:"nine", 10:"ten", 11:"eleven", 12:"twelve", 13: "thirteen", 14: "fourteen", 15: "fifteen", 16:"sixteen", 17:"seventeen", 18:"eighteen", 19:"nineteen"}
             hour = dic[first]
             res += hour
             min = input_time[3]
@@ -48,25 +48,26 @@ class Solution:
             if sec == 0:
                 res+="oh "
             elif sec == 1:
-                res += ""
+                teen = (input_time[3]) + (input_time[4])
+                res += dic[int(teen)]
             elif sec == 2:
-                res+= "twenty "
+                res+= "twenty"
             elif sec == 3:
-                res += "thirty "
+                res += "thirty"
             elif sec == 4:
-                res += "fourty "
+                res += "fourty"
             elif sec == 5:
-                res += "fifty "
+                res += "fifty"
 
-            if int(input_time[4]) == 0:
+            if int(input_time[4]) == 0 && int(input_time[3]) != 1:
                 if(sec == 0):
                     res += "clock "
             else:
                 res+= dic[int(input_time[4])]
             if int(input_time[0]) < 2:
-                res += "am"
+                res += " am"
             else:
-                res += "pm"
+                res +=  "pm"
             print(input_time)
             print(res)
             return res
